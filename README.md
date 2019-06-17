@@ -1,23 +1,17 @@
-ICP using Optimization
+# ICP using Sequencial Optimization
 
 test build process-
 1. mkdir build
 2. cd ~/build 
 3. cmake ..
 4. make -j20
-5. ./ICP_OPT
+5. ./OUTFile <optional_argument_number_test_case>
 
-for now file has no inputs regarding transformation matrices.
-input transformation matrix which other ICP will give me is right now handcoded inside
+## uses the following libraries : 
+libnabo [https://github.com/ethz-asl/libnabo]
 
-trajectory for ICP from kuka is right now stored in the data folder (data_for_ICP.csv)
+eigen [http://eigen.tuxfamily.org/index.php?title=Main_Page]
 
-part_ptcloud.csv file is under data folder
+nlopt [https://github.com/stevengj/nlopt]
 
-all utilities are running as black box
-
-only output is final transformtaion KukaBase_T_part
-
-As of now, i have kept outputs under main function- Aniruddha S.
-
-
+## used for part localization w.r.t. reference farme with submillimeter accuracy
